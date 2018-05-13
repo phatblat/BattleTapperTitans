@@ -16,6 +16,7 @@
 		F860695220A73186000CFFFB /* BattleTapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860695120A73186000CFFFB /* BattleTapperUITests.swift */; };
 		F860696020A7356A000CFFFB /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860695F20A7356A000CFFFB /* GameController.swift */; };
 		F860696220A73654000CFFFB /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F860696120A73654000CFFFB /* GameData.plist */; };
+		F860696420A88899000CFFFB /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860696320A88899000CFFFB /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F860695320A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F860695F20A7356A000CFFFB /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		F860696120A73654000CFFFB /* GameData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+		F860696320A88899000CFFFB /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				F860693120A73185000CFFFB /* AppDelegate.swift */,
 				F860693820A73186000CFFFB /* Assets.xcassets */,
+				F860696320A88899000CFFFB /* Enemy.swift */,
 				F860695F20A7356A000CFFFB /* GameController.swift */,
 				F860696120A73654000CFFFB /* GameData.plist */,
 				F860693D20A73186000CFFFB /* Info.plist */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860696420A88899000CFFFB /* Enemy.swift in Sources */,
 				F860693420A73185000CFFFB /* ViewController.swift in Sources */,
 				F860696020A7356A000CFFFB /* GameController.swift in Sources */,
 				F860693220A73185000CFFFB /* AppDelegate.swift in Sources */,

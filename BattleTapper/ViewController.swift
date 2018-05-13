@@ -9,10 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var progress: UIProgressView!
+    @IBOutlet var healthProgress: UIProgressView!
+    @IBOutlet var timeProgress: UIProgressView!
     @IBOutlet var level: UILabel!
+    @IBOutlet var enemy: UILabel!
     @IBOutlet var button: UIButton!
-    @IBOutlet var creature: UIImageView!
 
     private let game = GameController()
 
@@ -21,16 +22,18 @@ class ViewController: UIViewController {
         updateUI()
     }
 
-    /// Updates the UI
+    /// Updates the UI.
     func updateUI() {
-        creature.image = UIImage(named: "Evo\(game.currentLevel + 1)")
+        healthProgress.progress = game.currentEnemy.healthPercent
+        healthProgress.tintColor = game.currentEnemy.healthColor
+        timeProgress.progress = game.timeProgress
         level.text = game.currentLevelDisplay
-        progress.progress = game.progress
+        enemy.text = game.currentEnemy.name
     }
 
-    /// Handler for the button tap
+    /// Handler for the button tap.
     @IBAction func incrementProgress(_ sender: Any) {
-        if game.tap() && !game.active {
+        if game.attack() && !game.active {
             // Game over
             endGame()
         }
@@ -42,18 +45,19 @@ class ViewController: UIViewController {
         // Disable the button
         button.isEnabled = false
 
-        // Final BattleTapper
-        creature.image = UIImage(named: "Evo15Final")
-
         let alert = UIAlertController(
-            title: "Game Over",
-            message: "You did it! It took you \(game.tapCount) taps to beat all \(game.currentLevel + 1) levels.",
+            title: "Congrats!",
+            message: "You beat BattleTapper!",
             preferredStyle: .alert
         )
-        let action = UIAlertAction(title: "OK", style: .cancel) { (_: UIAlertAction) in
+        let quit = UIAlertAction(title: "Quit", style: .destructive) { _ in
             alert.dismiss(animated:  true)
         }
-        alert.addAction(action)
+        let replay = UIAlertAction(title: "Replay", style: .cancel) { _ in
+            alert.dismiss(animated:  true)
+        }
+        alert.addAction(quit)
+        alert.addAction(replay)
 
         present(alert, animated: true)
     }
