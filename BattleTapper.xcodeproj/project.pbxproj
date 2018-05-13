@@ -110,11 +110,11 @@
 				F860696320A88899000CFFFB /* Enemy.swift */,
 				F860695F20A7356A000CFFFB /* GameController.swift */,
 				F860696120A73654000CFFFB /* GameData.plist */,
+				F85DB34F20A89803002A0DC8 /* GameUpdateObserver.swift */,
 				F860693D20A73186000CFFFB /* Info.plist */,
 				F860693A20A73186000CFFFB /* LaunchScreen.storyboard */,
 				F860693520A73185000CFFFB /* Main.storyboard */,
 				F860693320A73185000CFFFB /* ViewController.swift */,
-				F85DB34F20A89803002A0DC8 /* GameUpdateObserver.swift */,
 			);
 			path = BattleTapper;
 			sourceTree = "<group>";

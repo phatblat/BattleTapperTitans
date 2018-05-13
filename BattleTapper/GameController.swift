@@ -83,6 +83,16 @@ class GameController {
         observer?.gameUpdated()
     }
 
+    /// Restart the current level.
+    func retryLevel() {
+        active = true
+        playerWon = nil
+        elapsedSeconds = 0
+        currentEnemy.currentHealth = currentEnemy.totalHealth
+        startTimer()
+        observer?.gameUpdated()
+    }
+
     /// Attacks the current enemy.
     ///
     /// - Returns: true if the enemy was defeated; false otherwise.
