@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Living Paper Bag 🛍</string>
+		<string>Living Paper Bag</string>
 		<key>health</key>
 		<integer>10</integer>
 		<key>time</key>
@@ -12,7 +12,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Angry Boy 😡</string>
+		<string>Angry Boy</string>
 		<key>health</key>
 		<integer>45</integer>
 		<key>time</key>
@@ -20,7 +20,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Meatball Master🍝</string>
+		<string>Meatball Master</string>
 		<key>health</key>
 		<integer>60</integer>
 		<key>time</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Goat 🐐</string>
+		<string>Goat</string>
 		<key>health</key>
 		<integer>70</integer>
 		<key>time</key>
@@ -36,11 +36,91 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>[BOSS] Snake 🐍</string>
+		<string>[BOSS] Snake</string>
 		<key>health</key>
 		<integer>100</integer>
 		<key>time</key>
 		<integer>30</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Baby Tiger</string>
+		<key>health</key>
+		<integer>80</integer>
+		<key>time</key>
+		<integer>25</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Robot</string>
+		<key>health</key>
+		<integer>140</integer>
+		<key>time</key>
+		<integer>40</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>[BOSS] Milk</string>
+		<key>health</key>
+		<integer>100</integer>
+		<key>time</key>
+		<integer>15</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>[BOSS] Super Caterpillar</string>
+		<key>health</key>
+		<integer>150</integer>
+		<key>time</key>
+		<integer>35</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Random Guy</string>
+		<key>health</key>
+		<integer>150</integer>
+		<key>time</key>
+		<integer>50</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>[BOSS] T-Rex</string>
+		<key>health</key>
+		<integer>250</integer>
+		<key>time</key>
+		<integer>95</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hipno Fish</string>
+		<key>health</key>
+		<integer>90</integer>
+		<key>time</key>
+		<integer>20</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Karate Master</string>
+		<key>health</key>
+		<integer>140</integer>
+		<key>time</key>
+		<integer>30</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>[BOSS] Floating Face</string>
+		<key>health</key>
+		<integer>150</integer>
+		<key>time</key>
+		<integer>29</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>[FINAL BOSS] Jack</string>
+		<key>health</key>
+		<integer>1000</integer>
+		<key>time</key>
+		<integer>230</integer>
 	</dict>
 </array>
 </plist>
