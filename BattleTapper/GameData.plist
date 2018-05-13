@@ -16,15 +16,15 @@
 		<key>health</key>
 		<integer>45</integer>
 		<key>time</key>
-		<integer>40</integer>
+		<integer>30</integer>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Meatball 🍝</string>
+		<string>Meatball Master🍝</string>
 		<key>health</key>
 		<integer>60</integer>
 		<key>time</key>
-		<integer>55</integer>
+		<integer>30</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -40,7 +40,7 @@
 		<key>health</key>
 		<integer>100</integer>
 		<key>time</key>
-		<integer>60</integer>
+		<integer>30</integer>
 	</dict>
 </array>
 </plist>
