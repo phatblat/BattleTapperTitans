@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        game.observer = self
         updateUI()
     }
 
@@ -35,30 +36,64 @@ class ViewController: UIViewController {
     @IBAction func incrementProgress(_ sender: Any) {
         if game.attack() && !game.active {
             // Game over
-            endGame()
+            guard let playerWon = game.playerWon else { fatalError("Game over but playerWon wasn't set!") }
+            endGame(playerWon)
         }
         updateUI()
     }
 
     /// Announces the end of the game.
-    func endGame() {
+    func endGame(_ playerWon: Bool) {
         // Disable the button
         button.isEnabled = false
 
+        let title: String
+        let message: String
+
+        switch playerWon {
+        case true:
+            title = "Congrats!"
+            message = "You beat BattleTapper!"
+        case false:
+            title = "You Lose"
+            message = "Your time ran out."
+        }
+
         let alert = UIAlertController(
-            title: "Congrats!",
-            message: "You beat BattleTapper!",
+            title: title,
+            message: message,
             preferredStyle: .alert
         )
         let quit = UIAlertAction(title: "Quit", style: .destructive) { _ in
             alert.dismiss(animated:  true)
+            abort()
         }
-        let replay = UIAlertAction(title: "Replay", style: .cancel) { _ in
+        let replay = UIAlertAction(title: "Replay", style: .cancel) { [weak self] _ in
             alert.dismiss(animated:  true)
+            self?.replay()
         }
         alert.addAction(quit)
         alert.addAction(replay)
 
         present(alert, animated: true)
+    }
+
+    /// Starts the game over at level 1.
+    func replay() {
+        game.replay()
+        
+        // Enable the button
+        button.isEnabled = true
+    }
+}
+
+/// Implement observer protocol
+extension ViewController: GameUpdateObserver {
+    func gameUpdated() {
+        if let playerWon = game.playerWon {
+            // Timer ran out
+            endGame(playerWon)
+        }
+        updateUI()
     }
 }
