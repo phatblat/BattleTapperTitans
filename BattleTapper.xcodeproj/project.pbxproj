@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F860693220A73185000CFFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860693120A73185000CFFFB /* AppDelegate.swift */; };
+		F860693420A73185000CFFFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860693320A73185000CFFFB /* ViewController.swift */; };
+		F860693720A73185000CFFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F860693520A73185000CFFFB /* Main.storyboard */; };
+		F860693920A73186000CFFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860693820A73186000CFFFB /* Assets.xcassets */; };
+		F860693C20A73186000CFFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F860693A20A73186000CFFFB /* LaunchScreen.storyboard */; };
+		F860694720A73186000CFFFB /* BattleTapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860694620A73186000CFFFB /* BattleTapperTests.swift */; };
+		F860695220A73186000CFFFB /* BattleTapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860695120A73186000CFFFB /* BattleTapperUITests.swift */; };
+		F860696020A7356A000CFFFB /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860695F20A7356A000CFFFB /* GameController.swift */; };
+		F860696220A73654000CFFFB /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F860696120A73654000CFFFB /* GameData.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F860694320A73186000CFFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F860692620A73185000CFFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F860692D20A73185000CFFFB;
+			remoteInfo = BattleTapper;
+		};
+		F860694E20A73186000CFFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F860692620A73185000CFFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F860692D20A73185000CFFFB;
+			remoteInfo = BattleTapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F860692E20A73185000CFFFB /* BattleTapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleTapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860693120A73185000CFFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F860693320A73185000CFFFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F860693620A73185000CFFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F860693820A73186000CFFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F860693B20A73186000CFFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F860693D20A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F860694220A73186000CFFFB /* BattleTapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860694620A73186000CFFFB /* BattleTapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTapperTests.swift; sourceTree = "<group>"; };
+		F860694820A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F860694D20A73186000CFFFB /* BattleTapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860695120A73186000CFFFB /* BattleTapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTapperUITests.swift; sourceTree = "<group>"; };
+		F860695320A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F860695F20A7356A000CFFFB /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		F860696120A73654000CFFFB /* GameData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F860692B20A73185000CFFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860693F20A73186000CFFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860694A20A73186000CFFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F860692520A73185000CFFFB = {
+			isa = PBXGroup;
+			children = (
+				F860693020A73185000CFFFB /* BattleTapper */,
+				F860694520A73186000CFFFB /* BattleTapperTests */,
+				F860695020A73186000CFFFB /* BattleTapperUITests */,
+				F860692F20A73185000CFFFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F860692F20A73185000CFFFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F860692E20A73185000CFFFB /* BattleTapper.app */,
+				F860694220A73186000CFFFB /* BattleTapperTests.xctest */,
+				F860694D20A73186000CFFFB /* BattleTapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F860693020A73185000CFFFB /* BattleTapper */ = {
+			isa = PBXGroup;
+			children = (
+				F860693120A73185000CFFFB /* AppDelegate.swift */,
+				F860693820A73186000CFFFB /* Assets.xcassets */,
+				F860695F20A7356A000CFFFB /* GameController.swift */,
+				F860696120A73654000CFFFB /* GameData.plist */,
+				F860693D20A73186000CFFFB /* Info.plist */,
+				F860693A20A73186000CFFFB /* LaunchScreen.storyboard */,
+				F860693520A73185000CFFFB /* Main.storyboard */,
+				F860693320A73185000CFFFB /* ViewController.swift */,
+			);
+			path = BattleTapper;
+			sourceTree = "<group>";
+		};
+		F860694520A73186000CFFFB /* BattleTapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				F860694620A73186000CFFFB /* BattleTapperTests.swift */,
+				F860694820A73186000CFFFB /* Info.plist */,
+			);
+			path = BattleTapperTests;
+			sourceTree = "<group>";
+		};
+		F860695020A73186000CFFFB /* BattleTapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F860695120A73186000CFFFB /* BattleTapperUITests.swift */,
+				F860695320A73186000CFFFB /* Info.plist */,
+			);
+			path = BattleTapperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F860692D20A73185000CFFFB /* BattleTapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860695620A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapper" */;
+			buildPhases = (
+				F860692A20A73185000CFFFB /* Sources */,
+				F860692B20A73185000CFFFB /* Frameworks */,
+				F860692C20A73185000CFFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BattleTapper;
+			productName = BattleTapper;
+			productReference = F860692E20A73185000CFFFB /* BattleTapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F860694120A73186000CFFFB /* BattleTapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860695920A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTests" */;
+			buildPhases = (
+				F860693E20A73186000CFFFB /* Sources */,
+				F860693F20A73186000CFFFB /* Frameworks */,
+				F860694020A73186000CFFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F860694420A73186000CFFFB /* PBXTargetDependency */,
+			);
+			name = BattleTapperTests;
+			productName = BattleTapperTests;
+			productReference = F860694220A73186000CFFFB /* BattleTapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F860694C20A73186000CFFFB /* BattleTapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860695C20A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperUITests" */;
+			buildPhases = (
+				F860694920A73186000CFFFB /* Sources */,
+				F860694A20A73186000CFFFB /* Frameworks */,
+				F860694B20A73186000CFFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F860694F20A73186000CFFFB /* PBXTargetDependency */,
+			);
+			name = BattleTapperUITests;
+			productName = BattleTapperUITests;
+			productReference = F860694D20A73186000CFFFB /* BattleTapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F860692620A73185000CFFFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Jack Chatelain";
+				TargetAttributes = {
+					F860692D20A73185000CFFFB = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					F860694120A73186000CFFFB = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = F860692D20A73185000CFFFB;
+					};
+					F860694C20A73186000CFFFB = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = F860692D20A73185000CFFFB;
+					};
+				};
+			};
+			buildConfigurationList = F860692920A73185000CFFFB /* Build configuration list for PBXProject "BattleTapper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F860692520A73185000CFFFB;
+			productRefGroup = F860692F20A73185000CFFFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F860692D20A73185000CFFFB /* BattleTapper */,
+				F860694120A73186000CFFFB /* BattleTapperTests */,
+				F860694C20A73186000CFFFB /* BattleTapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F860692C20A73185000CFFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860696220A73654000CFFFB /* GameData.plist in Resources */,
+				F860693C20A73186000CFFFB /* LaunchScreen.storyboard in Resources */,
+				F860693920A73186000CFFFB /* Assets.xcassets in Resources */,
+				F860693720A73185000CFFFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860694020A73186000CFFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860694B20A73186000CFFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F860692A20A73185000CFFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860693420A73185000CFFFB /* ViewController.swift in Sources */,
+				F860696020A7356A000CFFFB /* GameController.swift in Sources */,
+				F860693220A73185000CFFFB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860693E20A73186000CFFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860694720A73186000CFFFB /* BattleTapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860694920A73186000CFFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860695220A73186000CFFFB /* BattleTapperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F860694420A73186000CFFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F860692D20A73185000CFFFB /* BattleTapper */;
+			targetProxy = F860694320A73186000CFFFB /* PBXContainerItemProxy */;
+		};
+		F860694F20A73186000CFFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F860692D20A73185000CFFFB /* BattleTapper */;
+			targetProxy = F860694E20A73186000CFFFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F860693520A73185000CFFFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F860693620A73185000CFFFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F860693A20A73186000CFFFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F860693B20A73186000CFFFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F860695420A73186000CFFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F860695520A73186000CFFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F860695720A73186000CFFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTGSZH8QM4;
+				INFOPLIST_FILE = BattleTapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F860695820A73186000CFFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTGSZH8QM4;
+				INFOPLIST_FILE = BattleTapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F860695A20A73186000CFFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTGSZH8QM4;
+				INFOPLIST_FILE = BattleTapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleTapper.app/BattleTapper";
+			};
+			name = Debug;
+		};
+		F860695B20A73186000CFFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTGSZH8QM4;
+				INFOPLIST_FILE = BattleTapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleTapper.app/BattleTapper";
+			};
+			name = Release;
+		};
+		F860695D20A73186000CFFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTGSZH8QM4;
+				INFOPLIST_FILE = BattleTapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BattleTapper;
+			};
+			name = Debug;
+		};
+		F860695E20A73186000CFFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTGSZH8QM4;
+				INFOPLIST_FILE = BattleTapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BattleTapper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F860692920A73185000CFFFB /* Build configuration list for PBXProject "BattleTapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860695420A73186000CFFFB /* Debug */,
+				F860695520A73186000CFFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860695620A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860695720A73186000CFFFB /* Debug */,
+				F860695820A73186000CFFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860695920A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860695A20A73186000CFFFB /* Debug */,
+				F860695B20A73186000CFFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860695C20A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860695D20A73186000CFFFB /* Debug */,
+				F860695E20A73186000CFFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F860692620A73185000CFFFB /* Project object */;
+}

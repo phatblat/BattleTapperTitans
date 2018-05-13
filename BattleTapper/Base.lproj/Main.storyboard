@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BattleTapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="FiA-pl-7Ih">
+                                <rect key="frame" x="50" y="120" width="275" height="447"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kdq-3f-dMG">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="2.5"/>
+                                        <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsD-Wz-qnY">
+                                        <rect key="frame" x="0.0" y="62.5" width="275" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UM-NH-1iR">
+                                        <rect key="frame" x="0.0" y="145.5" width="275" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3z-Fq-azc">
+                                        <rect key="frame" x="0.0" y="228.5" width="275" height="218.5"/>
+                                        <state key="normal" image="Button"/>
+                                        <connections>
+                                            <action selector="incrementProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMu-df-SFS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Evo1" translatesAutoresizingMaskIntoConstraints="NO" id="oyD-FV-2Ot">
+                                <rect key="frame" x="175" y="467" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="j7N-K5-xUW"/>
+                                    <constraint firstAttribute="height" constant="200" id="tHW-38-cX4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FiA-pl-7Ih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="5D4-K6-DWo"/>
+                            <constraint firstItem="FiA-pl-7Ih" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-50" id="BH7-EY-qPr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="FiA-pl-7Ih" secondAttribute="top" constant="-100" id="SzZ-Pn-KRr"/>
+                            <constraint firstItem="oyD-FV-2Ot" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eH8-7r-CjU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FiA-pl-7Ih" secondAttribute="bottom" constant="100" id="iex-M9-pSp"/>
+                            <constraint firstItem="oyD-FV-2Ot" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lXe-hZ-G6x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="g3z-Fq-azc" id="Fjq-0B-Hoh"/>
+                        <outlet property="creature" destination="oyD-FV-2Ot" id="wtZ-qC-cp7"/>
+                        <outlet property="level" destination="4UM-NH-1iR" id="Kkl-PF-FkV"/>
+                        <outlet property="progress" destination="Kdq-3f-dMG" id="sAq-Bh-W4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="172" height="172"/>
+        <image name="Evo1" width="200" height="200"/>
+    </resources>
+</document>
