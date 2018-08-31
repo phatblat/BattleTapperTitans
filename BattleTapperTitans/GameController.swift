@@ -101,12 +101,12 @@ class GameController {
 
         tapCount += 1
         if currentEnemy.hit() {
-            debugPrint("Enemy is dead \(currentEnemy)")
+            debugPrint("Enemy is dead \(String(describing: currentEnemy))")
             nextLevel()
             return true
         }
 
-        debugPrint("Enemy was hit \(currentEnemy)")
+        debugPrint("Enemy was hit \(String(describing: currentEnemy))")
         return false
     }
 
@@ -121,7 +121,7 @@ class GameController {
             return
         }
         currentEnemy = enemies[currentLevel]
-        debugPrint("Level \(currentLevel + 1) enemy: \(currentEnemy)")
+        debugPrint("Level \(currentLevel + 1) enemy: \(String(describing: currentEnemy))")
         resetTimer()
     }
 
