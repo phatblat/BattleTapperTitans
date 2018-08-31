@@ -39,17 +39,17 @@
 
 /* Begin PBXFileReference section */
 		F85DB34F20A89803002A0DC8 /* GameUpdateObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUpdateObserver.swift; sourceTree = "<group>"; };
-		F860692E20A73185000CFFFB /* BattleTapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleTapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860692E20A73185000CFFFB /* BattleTapperTitans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleTapperTitans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860693120A73185000CFFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F860693320A73185000CFFFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F860693620A73185000CFFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F860693820A73186000CFFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F860693B20A73186000CFFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F860693D20A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F860694220A73186000CFFFB /* BattleTapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860694220A73186000CFFFB /* BattleTapperTitansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperTitansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860694620A73186000CFFFB /* BattleTapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTapperTests.swift; sourceTree = "<group>"; };
 		F860694820A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F860694D20A73186000CFFFB /* BattleTapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860694D20A73186000CFFFB /* BattleTapperTitansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperTitansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860695120A73186000CFFFB /* BattleTapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTapperUITests.swift; sourceTree = "<group>"; };
 		F860695320A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F860695F20A7356A000CFFFB /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 		F860692520A73185000CFFFB = {
 			isa = PBXGroup;
 			children = (
-				F860693020A73185000CFFFB /* BattleTapper */,
-				F860694520A73186000CFFFB /* BattleTapperTests */,
-				F860695020A73186000CFFFB /* BattleTapperUITests */,
+				F860693020A73185000CFFFB /* BattleTapperTitans */,
+				F860694520A73186000CFFFB /* BattleTapperTitansTests */,
+				F860695020A73186000CFFFB /* BattleTapperTitansUITests */,
 				F860692F20A73185000CFFFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,14 +95,14 @@
 		F860692F20A73185000CFFFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F860692E20A73185000CFFFB /* BattleTapper.app */,
-				F860694220A73186000CFFFB /* BattleTapperTests.xctest */,
-				F860694D20A73186000CFFFB /* BattleTapperUITests.xctest */,
+				F860692E20A73185000CFFFB /* BattleTapperTitans.app */,
+				F860694220A73186000CFFFB /* BattleTapperTitansTests.xctest */,
+				F860694D20A73186000CFFFB /* BattleTapperTitansUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F860693020A73185000CFFFB /* BattleTapper */ = {
+		F860693020A73185000CFFFB /* BattleTapperTitans */ = {
 			isa = PBXGroup;
 			children = (
 				F860693120A73185000CFFFB /* AppDelegate.swift */,
@@ -116,33 +116,33 @@
 				F860693520A73185000CFFFB /* Main.storyboard */,
 				F860693320A73185000CFFFB /* ViewController.swift */,
 			);
-			path = BattleTapper;
+			path = BattleTapperTitans;
 			sourceTree = "<group>";
 		};
-		F860694520A73186000CFFFB /* BattleTapperTests */ = {
+		F860694520A73186000CFFFB /* BattleTapperTitansTests */ = {
 			isa = PBXGroup;
 			children = (
 				F860694620A73186000CFFFB /* BattleTapperTests.swift */,
 				F860694820A73186000CFFFB /* Info.plist */,
 			);
-			path = BattleTapperTests;
+			path = BattleTapperTitansTests;
 			sourceTree = "<group>";
 		};
-		F860695020A73186000CFFFB /* BattleTapperUITests */ = {
+		F860695020A73186000CFFFB /* BattleTapperTitansUITests */ = {
 			isa = PBXGroup;
 			children = (
 				F860695120A73186000CFFFB /* BattleTapperUITests.swift */,
 				F860695320A73186000CFFFB /* Info.plist */,
 			);
-			path = BattleTapperUITests;
+			path = BattleTapperTitansUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F860692D20A73185000CFFFB /* BattleTapper */ = {
+		F860692D20A73185000CFFFB /* BattleTapperTitans */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F860695620A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapper" */;
+			buildConfigurationList = F860695620A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTitans" */;
 			buildPhases = (
 				F860692A20A73185000CFFFB /* Sources */,
 				F860692B20A73185000CFFFB /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = BattleTapper;
+			name = BattleTapperTitans;
 			productName = BattleTapper;
-			productReference = F860692E20A73185000CFFFB /* BattleTapper.app */;
+			productReference = F860692E20A73185000CFFFB /* BattleTapperTitans.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F860694120A73186000CFFFB /* BattleTapperTests */ = {
+		F860694120A73186000CFFFB /* BattleTapperTitansTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F860695920A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTests" */;
+			buildConfigurationList = F860695920A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTitansTests" */;
 			buildPhases = (
 				F860693E20A73186000CFFFB /* Sources */,
 				F860693F20A73186000CFFFB /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				F860694420A73186000CFFFB /* PBXTargetDependency */,
 			);
-			name = BattleTapperTests;
+			name = BattleTapperTitansTests;
 			productName = BattleTapperTests;
-			productReference = F860694220A73186000CFFFB /* BattleTapperTests.xctest */;
+			productReference = F860694220A73186000CFFFB /* BattleTapperTitansTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F860694C20A73186000CFFFB /* BattleTapperUITests */ = {
+		F860694C20A73186000CFFFB /* BattleTapperTitansUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F860695C20A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperUITests" */;
+			buildConfigurationList = F860695C20A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTitansUITests" */;
 			buildPhases = (
 				F860694920A73186000CFFFB /* Sources */,
 				F860694A20A73186000CFFFB /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				F860694F20A73186000CFFFB /* PBXTargetDependency */,
 			);
-			name = BattleTapperUITests;
+			name = BattleTapperTitansUITests;
 			productName = BattleTapperUITests;
-			productReference = F860694D20A73186000CFFFB /* BattleTapperUITests.xctest */;
+			productReference = F860694D20A73186000CFFFB /* BattleTapperTitansUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F860692920A73185000CFFFB /* Build configuration list for PBXProject "BattleTapper" */;
+			buildConfigurationList = F860692920A73185000CFFFB /* Build configuration list for PBXProject "BattleTapperTitans" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F860692D20A73185000CFFFB /* BattleTapper */,
-				F860694120A73186000CFFFB /* BattleTapperTests */,
-				F860694C20A73186000CFFFB /* BattleTapperUITests */,
+				F860692D20A73185000CFFFB /* BattleTapperTitans */,
+				F860694120A73186000CFFFB /* BattleTapperTitansTests */,
+				F860694C20A73186000CFFFB /* BattleTapperTitansUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		F860694420A73186000CFFFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F860692D20A73185000CFFFB /* BattleTapper */;
+			target = F860692D20A73185000CFFFB /* BattleTapperTitans */;
 			targetProxy = F860694320A73186000CFFFB /* PBXContainerItemProxy */;
 		};
 		F860694F20A73186000CFFFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F860692D20A73185000CFFFB /* BattleTapper */;
+			target = F860692D20A73185000CFFFB /* BattleTapperTitans */;
 			targetProxy = F860694E20A73186000CFFFB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,12 +452,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = BattleTapper/Info.plist;
+				INFOPLIST_FILE = BattleTapperTitans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapper;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTitans;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,12 +470,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = BattleTapper/Info.plist;
+				INFOPLIST_FILE = BattleTapperTitans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapper;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTitans;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,7 +489,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = BattleTapperTests/Info.plist;
+				INFOPLIST_FILE = BattleTapperTitansTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleTapper.app/BattleTapper";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleTapperTitans.app/BattleTapperTitans";
 			};
 			name = Debug;
 		};
@@ -510,7 +510,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = BattleTapperTests/Info.plist;
+				INFOPLIST_FILE = BattleTapperTitansTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleTapper.app/BattleTapper";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleTapperTitans.app/BattleTapperTitans";
 			};
 			name = Release;
 		};
@@ -530,7 +530,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = BattleTapperUITests/Info.plist;
+				INFOPLIST_FILE = BattleTapperTitansUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,7 +550,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = BattleTapperUITests/Info.plist;
+				INFOPLIST_FILE = BattleTapperTitansUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F860692920A73185000CFFFB /* Build configuration list for PBXProject "BattleTapper" */ = {
+		F860692920A73185000CFFFB /* Build configuration list for PBXProject "BattleTapperTitans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F860695420A73186000CFFFB /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F860695620A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapper" */ = {
+		F860695620A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTitans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F860695720A73186000CFFFB /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F860695920A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTests" */ = {
+		F860695920A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTitansTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F860695A20A73186000CFFFB /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F860695C20A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperUITests" */ = {
+		F860695C20A73186000CFFFB /* Build configuration list for PBXNativeTarget "BattleTapperTitansUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F860695D20A73186000CFFFB /* Debug */,
