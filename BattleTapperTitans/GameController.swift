@@ -13,7 +13,6 @@ class GameController {
     var playerWon: Bool?
     var currentLevel = 0
     var currentEnemy: Enemy!
-    var elapsedSeconds = 0
     var tapCount = 0
     var observer: GameUpdateObserver?
 
@@ -62,7 +61,6 @@ class GameController {
         playerWon = nil
         currentLevel = 0
         currentEnemy = enemies.first
-        elapsedSeconds = 0
         tapCount = 0
         observer?.gameUpdated()
     }
@@ -71,7 +69,6 @@ class GameController {
     func retryLevel() {
         active = true
         playerWon = nil
-        elapsedSeconds = 0
         currentEnemy.currentHealth = currentEnemy.totalHealth
         observer?.gameUpdated()
     }
