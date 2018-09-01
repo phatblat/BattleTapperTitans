@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var endLevelBarButtonItem: UIBarButtonItem! { didSet {
+        endLevelBarButtonItem.image = UIImage(named: "Sword")?.withRenderingMode(.alwaysOriginal)
+    }}
     @IBOutlet var healthProgress: UIProgressView!
-    @IBOutlet var timeProgress: UIProgressView!
     @IBOutlet var level: UILabel!
     @IBOutlet var enemy: UILabel!
     @IBOutlet var button: UIButton!

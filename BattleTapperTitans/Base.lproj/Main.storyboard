@@ -75,9 +75,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Battle Tapper Titans" id="HDp-75-GS3"/>
+                    <navigationItem key="navigationItem" title="Battle Tapper Titans" id="HDp-75-GS3">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="svr-pe-Y3r"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="button" destination="g3z-Fq-azc" id="Fjq-0B-Hoh"/>
+                        <outlet property="endLevelBarButtonItem" destination="svr-pe-Y3r" id="twB-ol-7qQ"/>
                         <outlet property="enemy" destination="3Kk-yV-Nxm" id="eRK-Xh-YpD"/>
                         <outlet property="healthProgress" destination="Kdq-3f-dMG" id="sOu-ae-cAB"/>
                         <outlet property="level" destination="4UM-NH-1iR" id="Kkl-PF-FkV"/>
