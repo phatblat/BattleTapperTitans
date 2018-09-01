@@ -18,9 +18,6 @@ struct Enemy {
 
     /// Current health
     var currentHealth: Int
-
-    /// Number of seconds user has to beat enemy
-    let time: Float
 }
 
 extension Enemy {

@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     func updateUI() {
         healthProgress.progress = game.currentEnemy.healthPercent
         healthProgress.tintColor = game.currentEnemy.healthColor
-        timeProgress.progress = game.timeProgress
         level.text = game.currentLevelDisplay
         enemy.text = game.currentEnemy.name
     }
