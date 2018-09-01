@@ -1,6 +1,6 @@
 //
 //  Enemy.swift
-//  BattleTapper
+//  BattleTapperTitans
 //
 //  Created by Ben Chatelain on 5/13/18.
 //  Copyright © 2018 Jack Chatelain. All rights reserved.

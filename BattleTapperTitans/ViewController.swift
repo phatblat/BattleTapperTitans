@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BattleTapper
+//  BattleTapperTitans
 //
 //  Created by Ben Chatelain on 5/13/18.
 //  Copyright © 2018 Jack Chatelain. All rights reserved.
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         switch playerWon {
         case true:
             title = "Congrats!"
-            message = "You beat BattleTapper!"
+            message = "You beat BattleTapperTitans!"
             alert = UIAlertController(
                 title: title,
                 message: message,
