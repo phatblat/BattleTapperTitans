@@ -41,13 +41,14 @@ class GameController {
         var enemies: [Enemy] = []
         data.forEach { (raw: [String: Any]) in
             guard let name = raw["name"] as? String,
+                  let emoji = raw["emoji"] as? String,
                   let health = raw["health"] as? Int
             else {
                 debugPrint("Error parsing enemy: \(raw)")
                 return
             }
 
-            let enemy = Enemy(name: name, totalHealth: health, currentHealth: health)
+            let enemy = Enemy(name: name, emoji: emoji, totalHealth: health, currentHealth: health)
             debugPrint("Parsed enemy: \(enemy)")
             enemies.append(enemy)
         }

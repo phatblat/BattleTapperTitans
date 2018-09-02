@@ -13,6 +13,9 @@ struct Enemy {
     /// Display name
     let name: String
 
+    /// Display icon
+    let emoji: String
+
     /// Starting health
     let totalHealth: Int
 

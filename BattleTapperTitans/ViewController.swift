@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         healthProgress.tintColor = game.currentEnemy.healthColor
         level.text = game.currentLevelDisplay
         enemy.text = game.currentEnemy.name
+        button.setTitle(game.currentEnemy.emoji, for: UIControl.State.normal) 
     }
 
     /// Handler for the attack button tap.
