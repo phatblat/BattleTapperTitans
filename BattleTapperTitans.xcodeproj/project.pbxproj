@@ -498,7 +498,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTitansTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,7 +519,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTitansTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -539,7 +539,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTitansUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -559,7 +559,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.BattleTapperTitansUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
