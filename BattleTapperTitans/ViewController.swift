@@ -33,13 +33,19 @@ class ViewController: UIViewController {
         enemy.text = game.currentEnemy.name
     }
 
-    /// Handler for the button tap.
+    /// Handler for the attack button tap.
     @IBAction func incrementProgress(_ sender: Any) {
         if game.attack() && !game.active {
             // Game over
             guard let playerWon = game.playerWon else { fatalError("Game over but playerWon wasn't set!") }
             endGame(playerWon)
         }
+        updateUI()
+    }
+
+    /// Handler for the defeat enemy button tap.
+    @IBAction func nextLevel(_ sender: Any) {
+        game.nextLevel()
         updateUI()
     }
 

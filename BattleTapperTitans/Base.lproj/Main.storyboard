@@ -76,7 +76,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Battle Tapper Titans" id="HDp-75-GS3">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="svr-pe-Y3r"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="svr-pe-Y3r">
+                            <connections>
+                                <action selector="nextLevel:" destination="BYZ-38-t0r" id="rc5-Ir-foj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="button" destination="g3z-Fq-azc" id="Fjq-0B-Hoh"/>
