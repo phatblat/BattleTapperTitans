@@ -1,6 +1,6 @@
 //
 //  Enemy.swift
-//  BattleTapper
+//  BattleTapperTitans
 //
 //  Created by Ben Chatelain on 5/13/18.
 //  Copyright © 2018 Jack Chatelain. All rights reserved.
@@ -13,14 +13,14 @@ struct Enemy {
     /// Display name
     let name: String
 
+    /// Display icon
+    let emoji: String
+
     /// Starting health
     let totalHealth: Int
 
     /// Current health
     var currentHealth: Int
-
-    /// Number of seconds user has to beat enemy
-    let time: Float
 }
 
 extension Enemy {

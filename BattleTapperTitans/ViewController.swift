@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BattleTapper
+//  BattleTapperTitans
 //
 //  Created by Ben Chatelain on 5/13/18.
 //  Copyright © 2018 Jack Chatelain. All rights reserved.
@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var endLevelBarButtonItem: UIBarButtonItem! { didSet {
+        endLevelBarButtonItem.image = UIImage(named: "Sword")?.withRenderingMode(.alwaysOriginal)
+    }}
     @IBOutlet var healthProgress: UIProgressView!
-    @IBOutlet var timeProgress: UIProgressView!
     @IBOutlet var level: UILabel!
     @IBOutlet var enemy: UILabel!
     @IBOutlet var button: UIButton!
@@ -27,18 +29,24 @@ class ViewController: UIViewController {
     func updateUI() {
         healthProgress.progress = game.currentEnemy.healthPercent
         healthProgress.tintColor = game.currentEnemy.healthColor
-        timeProgress.progress = game.timeProgress
         level.text = game.currentLevelDisplay
         enemy.text = game.currentEnemy.name
+        button.setTitle(game.currentEnemy.emoji, for: UIControl.State.normal) 
     }
 
-    /// Handler for the button tap.
+    /// Handler for the attack button tap.
     @IBAction func incrementProgress(_ sender: Any) {
         if game.attack() && !game.active {
             // Game over
             guard let playerWon = game.playerWon else { fatalError("Game over but playerWon wasn't set!") }
             endGame(playerWon)
         }
+        updateUI()
+    }
+
+    /// Handler for the defeat enemy button tap.
+    @IBAction func nextLevel(_ sender: Any) {
+        game.nextLevel()
         updateUI()
     }
 
@@ -55,7 +63,7 @@ class ViewController: UIViewController {
         switch playerWon {
         case true:
             title = "Congrats!"
-            message = "You beat BattleTapper!"
+            message = "You beat BattleTapperTitans!"
             alert = UIAlertController(
                 title: title,
                 message: message,

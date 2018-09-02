@@ -1,6 +1,6 @@
 //
 //  GameController.swift
-//  BattleTapper
+//  BattleTapperTitans
 //
 //  Created by Ben Chatelain on 5/13/18.
 //  Copyright © 2018 Jack Chatelain. All rights reserved.
@@ -13,22 +13,8 @@ class GameController {
     var playerWon: Bool?
     var currentLevel = 0
     var currentEnemy: Enemy!
-    var elapsedSeconds = 0
     var tapCount = 0
-    var timer: Timer?
     var observer: GameUpdateObserver?
-
-    /// Number of seconds remaining for the current level.
-    var remainingTime: Int { get {
-        guard elapsedSeconds >= 0, currentEnemy.time > 0 else { return 0 }
-        return Int(currentEnemy.time) - elapsedSeconds
-    }}
-
-    /// Percentage increase for each tap
-    var timeProgress: Float { get {
-        guard remainingTime > 0, currentEnemy.time > 0 else { return 0 }
-        return Float(remainingTime) / currentEnemy.time
-    }}
 
     /// Level displayed to user starts at 1
     var currentLevelDisplay: String { get {
@@ -42,7 +28,6 @@ class GameController {
         enemies = loadGameData()
         guard let enemy = enemies.first else { fatalError("No enemies loaded from game data!") }
         currentEnemy = enemy
-        startTimer()
     }
 
     /// Loads game data from plist file.
@@ -56,14 +41,14 @@ class GameController {
         var enemies: [Enemy] = []
         data.forEach { (raw: [String: Any]) in
             guard let name = raw["name"] as? String,
-                  let health = raw["health"] as? Int,
-                  let time = raw["time"] as? Float
+                  let emoji = raw["emoji"] as? String,
+                  let health = raw["health"] as? Int
             else {
                 debugPrint("Error parsing enemy: \(raw)")
                 return
             }
 
-            let enemy = Enemy(name: name, totalHealth: health, currentHealth: health, time: time)
+            let enemy = Enemy(name: name, emoji: emoji, totalHealth: health, currentHealth: health)
             debugPrint("Parsed enemy: \(enemy)")
             enemies.append(enemy)
         }
@@ -77,9 +62,7 @@ class GameController {
         playerWon = nil
         currentLevel = 0
         currentEnemy = enemies.first
-        elapsedSeconds = 0
         tapCount = 0
-        startTimer()
         observer?.gameUpdated()
     }
 
@@ -87,9 +70,7 @@ class GameController {
     func retryLevel() {
         active = true
         playerWon = nil
-        elapsedSeconds = 0
         currentEnemy.currentHealth = currentEnemy.totalHealth
-        startTimer()
         observer?.gameUpdated()
     }
 
@@ -112,7 +93,7 @@ class GameController {
 
     /// Progress to the next level.
     func nextLevel() {
-        debugPrint("Level \(currentLevel + 1) passed with \(remainingTime) seconds remaining.")
+        debugPrint("Level \(currentLevel + 1) passed.")
 
         // next level
         currentLevel += 1
@@ -122,53 +103,16 @@ class GameController {
         }
         currentEnemy = enemies[currentLevel]
         debugPrint("Level \(currentLevel + 1) enemy: \(String(describing: currentEnemy))")
-        resetTimer()
     }
 
     /// Ends the game.
     func endGame() {
         active = false
-        stopTimer()
-        debugPrint("Game completed with \(remainingTime) seconds remaining.")
+        debugPrint("Game completed.")
 
         if playerWon == nil {
             playerWon = true
             debugPrint("Player won!")
         }
-    }
-}
-
-/// Extension containing timer-related functionality.
-extension GameController {
-    /// Starts the timer for the current level.
-    func startTimer() {
-        elapsedSeconds = 0
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
-    }
-
-    /// Stops the timer.
-    func stopTimer() {
-        timer?.invalidate()
-        timer = nil
-    }
-
-    /// Cancels the current timer and starts a new one.
-    func resetTimer() {
-        stopTimer()
-        startTimer()
-    }
-
-    /// Called each time the timer fires.
-    @objc func timerFired() {
-        elapsedSeconds += 1
-
-        // Test if time ran out
-        if remainingTime <= 0 {
-            playerWon = false
-            endGame()
-            debugPrint("Game over. Time ran out with \(currentEnemy.currentHealth) enemy health remaining.")
-        }
-
-        observer?.gameUpdated()
     }
 }

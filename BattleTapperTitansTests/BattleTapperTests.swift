@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import BattleTapper
+@testable import BattleTapperTitans
 
 class BattleTapperTests: XCTestCase {
     
