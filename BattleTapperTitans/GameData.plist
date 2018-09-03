@@ -1,126 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<dict>
-		<key>emoji</key>
-		<string>🌞</string>
-		<key>health</key>
-		<integer>120</integer>
-		<key>name</key>
-		<string>The Sun</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>🌚</string>
-		<key>health</key>
-		<integer>345</integer>
-		<key>name</key>
-		<string>Dark Moon</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>🐲</string>
-		<key>health</key>
-		<integer>4000</integer>
-		<key>name</key>
-		<string>[Boss] DragonBeast</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>⛄️</string>
-		<key>health</key>
-		<integer>600</integer>
-		<key>name</key>
-		<string>SnowTitan</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>🦍</string>
-		<key>health</key>
-		<integer>8655</integer>
-		<key>name</key>
-		<string>[Boss] Goliath Gorilla</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>⚛️</string>
-		<key>health</key>
-		<integer>100</integer>
-		<key>name</key>
-		<string>Big Atom</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>💮</string>
-		<key>health</key>
-		<integer>780</integer>
-		<key>name</key>
-		<string>Chinese</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>💎</string>
-		<key>health</key>
-		<integer>8000</integer>
-		<key>name</key>
-		<string>[Boss] Diamond</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>🗿</string>
-		<key>health</key>
-		<integer>10500</integer>
-		<key>name</key>
-		<string>[Boss] Rock Dude</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>😈</string>
-		<key>health</key>
-		<integer>21000</integer>
-		<key>name</key>
-		<string>[UltraBoss] Devil</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>😡</string>
-		<key>health</key>
-		<integer>120000</integer>
-		<key>name</key>
-		<string>[FINAL] ANGRY FACE</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>🦖</string>
-		<key>health</key>
-		<integer>1000000</integer>
-		<key>name</key>
-		<string>[BONUS] Dominate-Rex</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>🖥</string>
-		<key>health</key>
-		<integer>1200000</integer>
-		<key>name</key>
-		<string>[BONUS] MaxBook</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>👁</string>
-		<key>health</key>
-		<integer>10000000</integer>
-		<key>name</key>
-		<string>[BONUS] Eye of doom</string>
-	</dict>
-	<dict>
-		<key>emoji</key>
-		<string>👹</string>
-		<key>health</key>
-		<integer>1000000000000</integer>
-		<key>name</key>
-		<string>[BONUS] DEATH</string>
-	</dict>
-</array>
+<dict>
+	<key>enemies</key>
+	<array>
+		<dict>
+			<key>emoji</key>
+			<string>🌞</string>
+			<key>health</key>
+			<integer>120</integer>
+			<key>name</key>
+			<string>The Sun</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>🌚</string>
+			<key>health</key>
+			<integer>345</integer>
+			<key>name</key>
+			<string>Dark Moon</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>🐲</string>
+			<key>health</key>
+			<integer>4000</integer>
+			<key>name</key>
+			<string>[Boss] DragonBeast</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>⛄️</string>
+			<key>health</key>
+			<integer>600</integer>
+			<key>name</key>
+			<string>SnowTitan</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>🦍</string>
+			<key>health</key>
+			<integer>8655</integer>
+			<key>name</key>
+			<string>[Boss] Goliath Gorilla</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>⚛️</string>
+			<key>health</key>
+			<integer>100</integer>
+			<key>name</key>
+			<string>Big Atom</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>💮</string>
+			<key>health</key>
+			<integer>780</integer>
+			<key>name</key>
+			<string>Chinese</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>💎</string>
+			<key>health</key>
+			<integer>8000</integer>
+			<key>name</key>
+			<string>[Boss] Diamond</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>🗿</string>
+			<key>health</key>
+			<integer>10500</integer>
+			<key>name</key>
+			<string>[Boss] Rock Dude</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>😈</string>
+			<key>health</key>
+			<integer>21000</integer>
+			<key>name</key>
+			<string>[UltraBoss] Devil</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>😡</string>
+			<key>health</key>
+			<integer>120000</integer>
+			<key>name</key>
+			<string>[FINAL] ANGRY FACE</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>🦖</string>
+			<key>health</key>
+			<integer>1000000</integer>
+			<key>name</key>
+			<string>[BONUS] Dominate-Rex</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>🖥</string>
+			<key>health</key>
+			<integer>1200000</integer>
+			<key>name</key>
+			<string>[BONUS] MaxBook</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>👁</string>
+			<key>health</key>
+			<integer>10000000</integer>
+			<key>name</key>
+			<string>[BONUS] Eye of doom</string>
+		</dict>
+		<dict>
+			<key>emoji</key>
+			<string>👹</string>
+			<key>health</key>
+			<integer>1000000000000</integer>
+			<key>name</key>
+			<string>[BONUS] DEATH</string>
+		</dict>
+	</array>
+</dict>
 </plist>

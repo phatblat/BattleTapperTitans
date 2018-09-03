@@ -35,11 +35,12 @@ class GameController {
     /// - Returns: Array of Enemy
     func loadGameData() -> [Enemy] {
         guard let path = Bundle.main.path(forResource: "GameData", ofType: "plist"),
-        let data = NSArray(contentsOfFile: path) as? [[String: Any]]
+        let data = NSDictionary(contentsOfFile: path) as? [String: [[String: Any]]],
+            let enemyData = data["enemies"]
             else { fatalError("Unable to load GameData.plist") }
 
         var enemies: [Enemy] = []
-        data.forEach { (raw: [String: Any]) in
+        enemyData.forEach { (raw: [String: Any]) in
             guard let name = raw["name"] as? String,
                   let emoji = raw["emoji"] as? String,
                   let health = raw["health"] as? Int
