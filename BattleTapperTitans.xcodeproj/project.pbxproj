@@ -13,7 +13,7 @@
 		F860693720A73185000CFFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F860693520A73185000CFFFB /* Main.storyboard */; };
 		F860693920A73186000CFFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860693820A73186000CFFFB /* Assets.xcassets */; };
 		F860693C20A73186000CFFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F860693A20A73186000CFFFB /* LaunchScreen.storyboard */; };
-		F860694720A73186000CFFFB /* BattleTapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860694620A73186000CFFFB /* BattleTapperTests.swift */; };
+		F860694720A73186000CFFFB /* EnemyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860694620A73186000CFFFB /* EnemyTests.swift */; };
 		F860695220A73186000CFFFB /* BattleTapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860695120A73186000CFFFB /* BattleTapperUITests.swift */; };
 		F860696020A7356A000CFFFB /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860695F20A7356A000CFFFB /* GameController.swift */; };
 		F860696220A73654000CFFFB /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F860696120A73654000CFFFB /* GameData.plist */; };
@@ -47,7 +47,7 @@
 		F860693B20A73186000CFFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F860693D20A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F860694220A73186000CFFFB /* BattleTapperTitansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperTitansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F860694620A73186000CFFFB /* BattleTapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTapperTests.swift; sourceTree = "<group>"; };
+		F860694620A73186000CFFFB /* EnemyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyTests.swift; sourceTree = "<group>"; };
 		F860694820A73186000CFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F860694D20A73186000CFFFB /* BattleTapperTitansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleTapperTitansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860695120A73186000CFFFB /* BattleTapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTapperUITests.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		F860694520A73186000CFFFB /* BattleTapperTitansTests */ = {
 			isa = PBXGroup;
 			children = (
-				F860694620A73186000CFFFB /* BattleTapperTests.swift */,
+				F860694620A73186000CFFFB /* EnemyTests.swift */,
 				F860694820A73186000CFFFB /* Info.plist */,
 			);
 			path = BattleTapperTitansTests;
@@ -284,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F860694720A73186000CFFFB /* BattleTapperTests.swift in Sources */,
+				F860694720A73186000CFFFB /* EnemyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

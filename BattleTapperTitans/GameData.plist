@@ -125,5 +125,7 @@
 			<string>[BONUS] DEATH</string>
 		</dict>
 	</array>
+	<key>powerup</key>
+	<array/>
 </dict>
 </plist>

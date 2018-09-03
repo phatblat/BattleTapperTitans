@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         healthProgress.tintColor = game.currentEnemy.healthColor
         level.text = game.currentLevelDisplay
         enemy.text = game.currentEnemy.name
-        button.setTitle(game.currentEnemy.emoji, for: UIControl.State.normal) 
+        button.setTitle(game.currentEnemy.emoji, for: UIControl.State.normal)
     }
 
     /// Handler for the attack button tap.
@@ -44,8 +44,25 @@ class ViewController: UIViewController {
         updateUI()
     }
 
+    // Flaming Fury Sword: deal 1 damage per 20th of a second for 10 seconds
+    @IBAction func powerup1(_ sender: Any) {
+    }
+
+    // Laser Sword: deal 100dmg
+    @IBAction func powerup2(_ sender: Any) {
+    }
+
+    // Doom Sword: double tap damage for the rest of the power up each tap (6sec)
+    @IBAction func powerup3(_ sender: Any) {
+    }
+
+    // Dragon Sword: deal 10dmg per tap for 8sec but each tap increases the duration by 0.1sec
+    @IBAction func powerup4(_ sender: Any) {
+    }
+
     /// Handler for the defeat enemy button tap.
-    @IBAction func nextLevel(_ sender: Any) {
+    // ULTIMATE SWORD: kill boss
+    @IBAction func powerup5(_ sender: Any) {
         game.nextLevel()
         updateUI()
     }

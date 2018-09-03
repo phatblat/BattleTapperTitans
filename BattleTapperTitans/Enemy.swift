@@ -52,7 +52,7 @@ extension Enemy {
     ///
     /// - Returns: true if the enemy is dead; false otherwise
     mutating func hit() -> Bool {
-        guard currentHealth > 0 else { return true }
+        guard !isDead else { return true }
         currentHealth -= 1
         return isDead
     }
