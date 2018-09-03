@@ -57,4 +57,11 @@ class EnemyTests: XCTestCase {
         XCTAssertFalse(enemy.isDead)
         XCTAssertEqual(enemy.currentHealth, 1)
     }
+
+    func testHit100WithTwoHealth() {
+        XCTAssertFalse(enemy.isDead)
+        XCTAssertTrue(enemy.hit(damage: 100))
+        XCTAssertTrue(enemy.isDead)
+        XCTAssertEqual(enemy.currentHealth, 0)
+    }
 }

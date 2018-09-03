@@ -92,8 +92,63 @@ class GameController {
         return false
     }
 
+    /// Attacks the current enemy with the Flaming Fury Sword.
+    /// deal 1 damage per 20th of a second for 10 seconds
+    ///
+    /// - Returns: true if the enemy was defeated; false otherwise.
+    func useFlamingFurySword() -> Bool {
+        return false
+    }
+
+    /// Attacks the current enemy with the Laser Sword.
+    /// deal 100dmg.
+
+    ///
+    /// - Returns: true if the enemy was defeated; false otherwise.
+    func useLaserSword() -> Bool {
+        guard active else { return false }
+
+        tapCount += 1
+        if currentEnemy.hit(damage: 100) {
+            debugPrint("Enemy is dead \(String(describing: currentEnemy))")
+            nextLevel()
+            return true
+        }
+
+        debugPrint("Enemy was hit \(String(describing: currentEnemy))")
+        return false
+    }
+
+    /// Attacks the current enemy with the Doom Sword.
+    /// double tap damage for the rest of the power up each tap (6sec)
+
+    ///
+    /// - Returns: true if the enemy was defeated; false otherwise.
+    func useDoomSword() -> Bool {
+        return false
+    }
+
+    /// Attacks the current enemy with the Dragon Sword.
+    /// deal 10dmg per tap for 8sec but each tap increases the duration by 0.1sec
+
+    ///
+    /// - Returns: true if the enemy was defeated; false otherwise.
+    func useDragonSword() -> Bool {
+        return false
+    }
+
+    /// Attacks the current enemy with the Ultimate Sword.
+    /// defeats the current enemy
+
+    ///
+    /// - Returns: true if the enemy was defeated; false otherwise.
+    func useUltimateSword() -> Bool {
+        nextLevel()
+        return true
+    }
+
     /// Progress to the next level.
-    func nextLevel() {
+    private func nextLevel() {
         debugPrint("Level \(currentLevel + 1) passed.")
 
         // next level

@@ -51,9 +51,12 @@ extension Enemy {
     /// Hit the enemy.
     ///
     /// - Returns: true if the enemy is dead; false otherwise
-    mutating func hit() -> Bool {
+    mutating func hit(damage: Int = 1) -> Bool {
         guard !isDead else { return true }
-        currentHealth -= 1
+        currentHealth -= damage
+        if currentHealth < 0 {
+            currentHealth = 0
+        }
         return isDead
     }
 }

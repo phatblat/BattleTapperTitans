@@ -36,34 +36,43 @@ class ViewController: UIViewController {
 
     /// Handler for the attack button tap.
     @IBAction func incrementProgress(_ sender: Any) {
-        if game.attack() && !game.active {
-            // Game over
-            guard let playerWon = game.playerWon else { fatalError("Game over but playerWon wasn't set!") }
-            endGame(playerWon)
-        }
-        updateUI()
+        useAction(game.attack)
     }
 
     // Flaming Fury Sword: deal 1 damage per 20th of a second for 10 seconds
     @IBAction func powerup1(_ sender: Any) {
+        useAction(game.useFlamingFurySword)
     }
 
     // Laser Sword: deal 100dmg
     @IBAction func powerup2(_ sender: Any) {
+        useAction(game.useLaserSword)
     }
 
     // Doom Sword: double tap damage for the rest of the power up each tap (6sec)
     @IBAction func powerup3(_ sender: Any) {
+        useAction(game.useDoomSword)
     }
 
     // Dragon Sword: deal 10dmg per tap for 8sec but each tap increases the duration by 0.1sec
     @IBAction func powerup4(_ sender: Any) {
+        useAction(game.useDragonSword)
     }
 
     /// Handler for the defeat enemy button tap.
     // ULTIMATE SWORD: kill boss
     @IBAction func powerup5(_ sender: Any) {
-        game.nextLevel()
+        useAction(game.useUltimateSword)
+    }
+
+    /// Invoke a game action.
+    private func useAction(_ action: () -> Bool) {
+        if action() && !game.active {
+            // Game over
+            guard let playerWon = game.playerWon
+                else { fatalError("Game over but playerWon wasn't set!") }
+            endGame(playerWon)
+        }
         updateUI()
     }
 
